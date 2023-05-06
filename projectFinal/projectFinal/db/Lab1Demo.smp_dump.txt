@@ -1,0 +1,10 @@
+
+State Machine - |TOP_VGA_DEMO_KBD|GameStateMachine:inst11|game_ps
+Name game_ps.s_loseGame game_ps.s_winGame game_ps.s_whiteBallin game_ps.s_newHit game_ps.s_roll game_ps.s_initLocations game_ps.s_idle 
+game_ps.s_idle 0 0 0 0 0 0 0 
+game_ps.s_initLocations 0 0 0 0 0 1 1 
+game_ps.s_roll 0 0 0 0 1 0 1 
+game_ps.s_newHit 0 0 0 1 0 0 1 
+game_ps.s_whiteBallin 0 0 1 0 0 0 1 
+game_ps.s_winGame 0 1 0 0 0 0 1 
+game_ps.s_loseGame 1 0 0 0 0 0 1 

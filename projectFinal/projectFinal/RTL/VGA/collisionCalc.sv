@@ -1,0 +1,526 @@
+
+
+module collisionCalc
+(
+
+/*inputs:
+
+collisions from game controller
+velocities from MoveLogic
+
+outputs
+new velocities
+*/
+
+//system inputs
+input	logic	clk,
+input	logic	resetN,
+input	logic	startOfFrame,
+
+//velocities
+input int xSpeed0,
+input int ySpeed0,
+
+input int xSpeed1,
+input int ySpeed1,
+
+input int xSpeed2,
+input int ySpeed2,
+
+input int xSpeed3,
+input int ySpeed3,
+
+input int xSpeed4,
+input int ySpeed4,
+
+//collisions
+input logic col01,
+input logic col02,
+input logic col03,
+input logic col04,
+input logic col12,
+input logic col13,
+input logic col14,
+input logic col23,
+input logic col24,
+input logic col34,
+
+
+//outputs
+output int xSpeed0New,
+output int ySpeed0New,
+
+output int xSpeed1New,
+output int ySpeed1New,
+
+output int xSpeed2New,
+output int ySpeed2New,
+
+output int xSpeed3New,
+output int ySpeed3New,
+
+output int xSpeed4New,
+output int ySpeed4New
+
+);
+
+const int recoilSpeed = 30;
+
+logic flag01;
+logic flag02;
+logic flag03;
+logic flag04;
+logic flag12;
+logic flag13;
+logic flag14;
+logic flag23;
+logic flag24;
+logic flag34;
+
+int xSpeed01;
+int xSpeed02;
+int xSpeed03;
+int xSpeed04;
+int xSpeed12;
+int xSpeed13;
+int xSpeed14;
+int xSpeed23;
+int xSpeed24;
+int xSpeed34;
+
+int ySpeed01;
+int ySpeed02;
+int ySpeed03;
+int ySpeed04;
+int ySpeed12;
+int ySpeed13;
+int ySpeed14;
+int ySpeed23;
+int ySpeed24;
+int ySpeed34;
+
+
+
+always_ff@(posedge clk or negedge resetN)
+begin
+	if(!resetN)
+	begin
+		xSpeed0New <= 0;
+		ySpeed0New <= 0;
+		xSpeed1New <= 0;
+		ySpeed1New <= 0;
+		xSpeed2New <= 0;
+		ySpeed2New <= 0;
+		xSpeed3New <= 0;
+		ySpeed3New <= 0;
+		xSpeed4New <= 0;
+		ySpeed4New <= 0;
+		
+		flag01 <= 0;
+		flag02 <= 0;
+		flag03 <= 0;
+		flag04 <= 0;
+		flag12 <= 0;
+		flag13 <= 0;
+		flag14 <= 0;
+		flag23 <= 0;
+		flag24 <= 0;
+		flag34 <= 0;
+		
+		xSpeed01 <= 0;
+		xSpeed02 <= 0;
+		xSpeed03 <= 0;
+		xSpeed04 <= 0;
+		xSpeed12 <= 0;
+		xSpeed13 <= 0;
+		xSpeed14 <= 0;
+		xSpeed23 <= 0;
+		xSpeed24 <= 0;
+		xSpeed34 <= 0;
+		
+		ySpeed01 <= 0;
+		ySpeed02 <= 0;
+		ySpeed03 <= 0;
+		ySpeed04 <= 0;		
+		ySpeed12 <= 0;
+		ySpeed13 <= 0;
+		ySpeed14 <= 0;
+		ySpeed23 <= 0;
+		ySpeed24 <= 0;
+		ySpeed34 <= 0;
+
+	end
+	
+	else if(startOfFrame)
+	begin
+		//flag reset
+		flag01 <= 0;
+		flag02 <= 0;
+		flag03 <= 0;
+		flag04 <= 0;
+		flag12 <= 0;
+		flag13 <= 0;
+		flag14 <= 0;
+		flag23 <= 0;
+		flag24 <= 0;
+		flag34 <= 0;
+	end	
+
+	else begin
+	
+		xSpeed01 <= xSpeed0 + xSpeed1;
+		ySpeed01 <= ySpeed0 + ySpeed1;
+		
+		xSpeed02 <= xSpeed0 + xSpeed2;
+		ySpeed02 <= ySpeed0 + ySpeed2;
+		
+		xSpeed03 <= xSpeed0 + xSpeed3;
+		ySpeed03 <= ySpeed0 + ySpeed3;
+		
+		xSpeed04 <= xSpeed0 + xSpeed4;
+		ySpeed04 <= ySpeed0 + ySpeed4;
+		
+		xSpeed12 <= xSpeed1 + xSpeed2;
+		ySpeed12 <= ySpeed1 + ySpeed2;
+		
+		xSpeed13 <= xSpeed1 + xSpeed3;
+		ySpeed13 <= ySpeed1 + ySpeed3;
+		
+		xSpeed14 <= xSpeed1 + xSpeed4;
+		ySpeed14 <= ySpeed1 + ySpeed4;
+		
+		xSpeed23 <= xSpeed2 + xSpeed3;
+		ySpeed23 <= ySpeed2 + ySpeed3;
+		
+		xSpeed24 <= xSpeed2 + xSpeed4;
+		ySpeed24 <= ySpeed2 + ySpeed4;
+		
+		xSpeed34 <= xSpeed3 + xSpeed4;
+		ySpeed34 <= ySpeed3 + ySpeed4;
+		
+		if(col01 && !flag01)
+		begin //01
+			flag01 <= 1;			
+			
+			//recoil
+			if(!xSpeed1 && !ySpeed1)
+			begin
+				xSpeed1New <= xSpeed01;
+				ySpeed1New <= ySpeed01 / 2;
+				xSpeed0New <= -xSpeed01 / 2;
+				ySpeed0New <= -ySpeed01 / 2;
+			end
+				
+			else if(!xSpeed0 && !ySpeed0)
+			begin
+				xSpeed0New <= xSpeed01;
+				ySpeed0New <= ySpeed01;
+				xSpeed1New <= -xSpeed01 / 2;
+				ySpeed1New <= -ySpeed01 / 2;
+			end
+				
+			else begin
+				xSpeed0New <= xSpeed1;
+				ySpeed0New <= ySpeed1;
+				xSpeed1New <= xSpeed0;
+				ySpeed1New <= ySpeed0;
+			end
+		end //01
+		
+		if(col02 && !flag02)
+		begin //02
+			flag02 <= 1;
+			
+			//recoil
+			if(!xSpeed2 && !ySpeed2)
+			begin
+				xSpeed2New <= xSpeed02;
+				ySpeed2New <= ySpeed02;
+				xSpeed0New <= -xSpeed02 / 2;
+				ySpeed0New <= -ySpeed02 / 2;
+			end
+			
+			else if(!xSpeed0 && !ySpeed0)
+			begin
+				xSpeed0New <= xSpeed02;
+				ySpeed0New <= ySpeed02;
+				xSpeed2New <= -xSpeed02 / 2;
+				ySpeed2New <= -ySpeed02 / 2;
+				
+			end
+			
+			else begin
+				xSpeed0New <= xSpeed2;
+				ySpeed0New <= ySpeed2;
+				xSpeed2New <= xSpeed0;
+				ySpeed2New <= ySpeed0;
+			end
+		end //02
+		
+		if(col03 && !flag03)
+		begin //03
+			flag03 <= 1;
+			
+			//recoil
+			if(!xSpeed3 && !ySpeed3)
+			begin
+				xSpeed3New <= xSpeed03;
+				ySpeed3New <= ySpeed03;
+				xSpeed0New <= -xSpeed03 / 2;
+				ySpeed0New <= -ySpeed03 / 2;
+			end
+			
+			else if(!xSpeed0 && !ySpeed0)
+			begin
+				xSpeed0New <= xSpeed03;
+				ySpeed0New <= ySpeed03;
+				xSpeed3New <= -xSpeed03 / 2;
+				ySpeed3New <= -ySpeed03 / 2;
+			end
+			
+			else begin
+			xSpeed0New <= xSpeed3;
+			ySpeed0New <= ySpeed3;
+			xSpeed3New <= xSpeed0;
+			ySpeed3New <= ySpeed0;
+			end
+		end //03
+		
+		if(col04 && !flag04)
+		begin//04
+			flag04 <= 1;
+			//recoil
+			if(!xSpeed4 && !ySpeed4)
+			begin
+				xSpeed4New <= xSpeed04;
+				ySpeed4New <= ySpeed04;
+				xSpeed0New <= -xSpeed04 / 2;
+				ySpeed0New <= -ySpeed04 / 2;
+			end
+			
+			else if(!xSpeed0 && !ySpeed0)
+			begin
+				xSpeed0New <= xSpeed04;
+				ySpeed0New <= ySpeed04;
+				xSpeed4New <= -xSpeed04 / 2;
+				ySpeed4New <= -ySpeed04 / 2;
+			end
+			
+			else begin
+			xSpeed0New <= xSpeed4;
+			ySpeed0New <= ySpeed4;
+			xSpeed4New <= xSpeed0;
+			ySpeed4New <= ySpeed0;
+			end
+			
+		end//04
+		
+		if(col12 && !flag12)
+		begin //12
+			flag12 <= 1;
+			
+			//recoil
+			if(!xSpeed1 && !ySpeed1)
+			begin
+				xSpeed1New <= xSpeed12;
+				ySpeed1New <= ySpeed12;
+				xSpeed2New <= -xSpeed12 / 2;
+				ySpeed2New <= -ySpeed12 / 2;
+			end
+			
+			else if(!xSpeed2 && !ySpeed2)
+			begin
+				xSpeed2New <= xSpeed12;
+				ySpeed2New <= ySpeed12;
+				xSpeed1New <= -xSpeed12 / 2;
+				ySpeed1New <= -ySpeed12 / 2;
+			end
+			
+			else begin
+			xSpeed1New <= xSpeed2;
+			ySpeed1New <= ySpeed2;
+			xSpeed2New <= xSpeed1;
+			ySpeed2New <= ySpeed1;
+			end
+		end//12
+		
+		
+		if(col13 && !flag13)
+		begin //13
+			flag13 <= 1;
+			
+			//recoil
+			if(!xSpeed1 && !ySpeed1)
+			begin
+				xSpeed1New <= xSpeed13;
+				ySpeed1New <= ySpeed13;
+				xSpeed3New <= -xSpeed13 / 2;
+				ySpeed3New <= -ySpeed13 / 2;
+			end
+			
+			else if(!xSpeed3 && !ySpeed3)
+			begin
+				xSpeed3New <= xSpeed13;
+				ySpeed3New <= ySpeed13;
+				xSpeed1New <= -xSpeed13 / 2;
+				ySpeed1New <= -ySpeed13 / 2;
+			end
+			
+			else begin
+			xSpeed1New <= xSpeed3;
+			ySpeed1New <= ySpeed3;
+			xSpeed3New <= xSpeed1;
+			ySpeed3New <= ySpeed1;
+			end
+		end//13
+		
+		if(col14 && !flag14)
+		begin //14
+			flag14 <= 1;
+			
+			//recoil
+			if(!xSpeed1 && !ySpeed1)
+			begin
+				xSpeed1New <= xSpeed14;
+				ySpeed1New <= ySpeed14;
+				xSpeed4New <= -xSpeed14 / 2;
+				ySpeed4New <= -ySpeed14 / 2;
+			end
+			
+			else if(!xSpeed4 && !ySpeed4)
+			begin
+				xSpeed4New <= xSpeed14;
+				ySpeed4New <= ySpeed14;
+				xSpeed1New <= -xSpeed14 / 2;
+				ySpeed1New <= -ySpeed14 / 2;
+			end
+			
+			else begin
+			xSpeed1New <= xSpeed4;
+			ySpeed1New <= ySpeed4;
+			xSpeed4New <= xSpeed1;
+			ySpeed4New <= ySpeed1;
+			end
+		end//14
+		
+		if(col23 && !flag23)
+		begin //23
+			flag23 <= 1;
+			
+			//recoil
+			if(!xSpeed2 && !ySpeed2)
+			begin
+				xSpeed2New <= xSpeed23;
+				ySpeed2New <= ySpeed23;
+				xSpeed3New <= -xSpeed23 / 2;
+				ySpeed3New <= -ySpeed23 / 2;
+			end
+			
+			else if(!xSpeed3 && !ySpeed3)
+			begin
+				xSpeed3New <= xSpeed23;
+				ySpeed3New <= ySpeed23;
+				xSpeed2New <= -xSpeed23 / 2;
+				ySpeed2New <= -ySpeed23 / 2;
+			end
+			
+			else begin
+			xSpeed3New <= xSpeed2;
+			ySpeed3New <= ySpeed2;
+			xSpeed2New <= xSpeed3;
+			ySpeed2New <= ySpeed3;
+			end
+		end//23
+		
+		
+		if(col24 && !flag24)
+		begin //24
+			flag24 <= 1;
+			
+			//recoil
+			if(!xSpeed2 && !ySpeed2)
+			begin
+				xSpeed2New <= xSpeed24;
+				ySpeed2New <= ySpeed24;
+				xSpeed4New <= -xSpeed24 / 2;
+				ySpeed4New <= -ySpeed24 / 2;
+			end
+			
+			else if(!xSpeed4 && !ySpeed4)
+			begin
+				xSpeed4New <= xSpeed24;
+				ySpeed4New <= ySpeed24;
+				xSpeed2New <= -xSpeed24 / 2;
+				ySpeed2New <= -ySpeed24 / 2;
+			end
+			
+			else begin
+			xSpeed4New <= xSpeed2;
+			ySpeed4New <= ySpeed2;
+			xSpeed2New <= xSpeed4;
+			ySpeed2New <= ySpeed4;
+			end
+		end//24
+		
+		if(col34 && !flag34)
+		begin //34
+			flag34 <= 1;
+			
+			//recoil
+			if(!xSpeed3 && !ySpeed3)
+			begin
+				xSpeed3New <= xSpeed34;
+				ySpeed3New <= ySpeed34;
+				xSpeed4New <= -xSpeed34 / 2;
+				ySpeed4New <= -ySpeed34 / 2;
+			end
+			
+			else if(!xSpeed4 && !ySpeed4)
+			begin
+				xSpeed4New <= xSpeed34;
+				ySpeed4New <= ySpeed34;
+				xSpeed3New <= -xSpeed34 / 2;
+				ySpeed3New <= -ySpeed34 / 2;
+			end
+			
+			else begin
+			xSpeed4New <= xSpeed3;
+			ySpeed4New <= ySpeed3;
+			xSpeed3New <= xSpeed4;
+			ySpeed3New <= ySpeed4;
+			end
+		end//34
+
+		
+	/*	
+		if(col23 && !flag23)
+		begin //23
+			flag23 <= 1;
+			xSpeed2New <= xSpeed3;
+			ySpeed2New <= ySpeed3;
+			xSpeed3New <= xSpeed2;
+			ySpeed3New <= ySpeed2;
+		end //23
+		
+		if(col24 && !flag24)
+		begin //24
+			flag24 <= 1;
+			xSpeed2New <= xSpeed4;
+			ySpeed2New <= ySpeed4;
+			xSpeed4New <= xSpeed2;
+			ySpeed4New <= ySpeed2;
+		end //24
+		
+		if(col34 && !flag34)
+		begin //34
+			flag34 <= 1;
+			xSpeed3New <= xSpeed4;
+			ySpeed3New <= ySpeed4;
+			xSpeed4New <= xSpeed3;
+			ySpeed4New <= ySpeed3;
+		end //34
+
+	*/end
+end
+
+endmodule

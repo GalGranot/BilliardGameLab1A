@@ -1,0 +1,251 @@
+Restore Archived Project report for Billiard
+Wed Sep 14 23:29:59 2022
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Sep 14 23:29:59 2022 ;
+; Revision Name                   ; Billiard                              ;
+; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                      ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Galag/OneDrive - Technion/EE Lab1 Galit and Gal/Project/archives/finalfromgalit.qar' into the 'C:\\Users\\Galag\\Desktop\\project\\1409_5/' directory
+Info: Generated report 'Billiard.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Wed Sep 14 23:29:59 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------------------------------------------------------------+
+; Files Restored                                                                  ;
++---------------------------------------------------------------------------------+
+; File Name                                                                       ;
++---------------------------------------------------------------------------------+
+; qar_info.json                                                                   ;
+; Project_18_08_22_restored/Billiard.qsf                                          ;
+; Project_18_08_22_restored/DE10_Standard_Audio.sdc                               ;
+; Project_18_08_22_restored/Lab1Demo.qpf                                          ;
+; Project_18_08_22_restored/Lab1Demo.qsf                                          ;
+; Project_18_08_22_restored/Number_position.bsf                                   ;
+; Project_18_08_22_restored/Number_position.qip                                   ;
+; Project_18_08_22_restored/Number_position.v                                     ;
+; Project_18_08_22_restored/Number_position_bb.v                                  ;
+; Project_18_08_22_restored/RTL/AUDIO/AUDIO.bdf                                   ;
+; Project_18_08_22_restored/RTL/AUDIO/SinTable.sv                                 ;
+; Project_18_08_22_restored/RTL/AUDIO/TOP_AUDIO.bdf                               ;
+; Project_18_08_22_restored/RTL/AUDIO/ToneDecoder.sv                              ;
+; Project_18_08_22_restored/RTL/AUDIO/addr_counter.sv                             ;
+; Project_18_08_22_restored/RTL/AUDIO/prescaler.sv                                ;
+; Project_18_08_22_restored/RTL/ConstForSquareObject.bsf                          ;
+; Project_18_08_22_restored/RTL/ConstForSquareObject.qip                          ;
+; Project_18_08_22_restored/RTL/ConstForSquareObject.v                            ;
+; Project_18_08_22_restored/RTL/ConstForSquareObject_bb.v                         ;
+; Project_18_08_22_restored/RTL/KEYBOARD/HexSS.sv                                 ;
+; Project_18_08_22_restored/RTL/KEYBOARD/KEYBOARD_INTERFACE.qxp                   ;
+; Project_18_08_22_restored/RTL/KEYBOARD/random.sv                                ;
+; Project_18_08_22_restored/RTL/KEYBOARD/simple_up_counter.sv                     ;
+; Project_18_08_22_restored/RTL/Seg7/SEG7.SV                                      ;
+; Project_18_08_22_restored/RTL/VGA/BlackBallBitMap.sv                            ;
+; Project_18_08_22_restored/RTL/VGA/GALGALITBitMap.sv                             ;
+; Project_18_08_22_restored/RTL/VGA/GameStateMachine.sv                           ;
+; Project_18_08_22_restored/RTL/VGA/NumbersBitMap.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/STARTBitMap.sv                                ;
+; Project_18_08_22_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf                          ;
+; Project_18_08_22_restored/RTL/VGA/VGA_Controller.sv                             ;
+; Project_18_08_22_restored/RTL/VGA/YouLoseBitMap.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/YouWinBitMap.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/back_ground_draw.sv                           ;
+; Project_18_08_22_restored/RTL/VGA/blueBitMap.sv                                 ;
+; Project_18_08_22_restored/RTL/VGA/blueHoleBitMap.sv                             ;
+; Project_18_08_22_restored/RTL/VGA/clockDivider.v                                ;
+; Project_18_08_22_restored/RTL/VGA/cnfx.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/cnfx.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/cnfx.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/cnfx_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/cnfy.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/cnfy.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/cnfy.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/cnfy_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/collisionCalc.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/confettiBitMap.sv                             ;
+; Project_18_08_22_restored/RTL/VGA/correctTargetCheck.sv                         ;
+; Project_18_08_22_restored/RTL/VGA/game_controller.sv                            ;
+; Project_18_08_22_restored/RTL/VGA/holeBitMap.sv                                 ;
+; Project_18_08_22_restored/RTL/VGA/holeDisplay.bdf                               ;
+; Project_18_08_22_restored/RTL/VGA/holeRandom.sv                                 ;
+; Project_18_08_22_restored/RTL/VGA/holeTargetMux.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/loseDisplay.bdf                               ;
+; Project_18_08_22_restored/RTL/VGA/lsx.bsf                                       ;
+; Project_18_08_22_restored/RTL/VGA/lsx.qip                                       ;
+; Project_18_08_22_restored/RTL/VGA/lsx.v                                         ;
+; Project_18_08_22_restored/RTL/VGA/lsx_bb.v                                      ;
+; Project_18_08_22_restored/RTL/VGA/lsy.bsf                                       ;
+; Project_18_08_22_restored/RTL/VGA/lsy.qip                                       ;
+; Project_18_08_22_restored/RTL/VGA/lsy.v                                         ;
+; Project_18_08_22_restored/RTL/VGA/lsy_bb.v                                      ;
+; Project_18_08_22_restored/RTL/VGA/objects_mux.sv                                ;
+; Project_18_08_22_restored/RTL/VGA/orangeBitMap.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/orangeHoleBitMap.sv                           ;
+; Project_18_08_22_restored/RTL/VGA/playBall1Block.bdf                            ;
+; Project_18_08_22_restored/RTL/VGA/playBall2Block.bdf                            ;
+; Project_18_08_22_restored/RTL/VGA/playBall3Block.bdf                            ;
+; Project_18_08_22_restored/RTL/VGA/playBall4Block.bdf                            ;
+; Project_18_08_22_restored/RTL/VGA/playBallMoveLogic.sv                          ;
+; Project_18_08_22_restored/RTL/VGA/pntx.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/pntx.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/pntx.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/pntx_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/pnty.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/pnty.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/pnty.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/pnty_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/pointsBitMap.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/pointsDisplay.bdf                             ;
+; Project_18_08_22_restored/RTL/VGA/portalBlock.bdf                               ;
+; Project_18_08_22_restored/RTL/VGA/portalMoveLogic.sv                            ;
+; Project_18_08_22_restored/RTL/VGA/purpleBitMap.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/redBallBitMap.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/score_counter.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/sightBitMap.sv                                ;
+; Project_18_08_22_restored/RTL/VGA/sightDisplay.bdf                              ;
+; Project_18_08_22_restored/RTL/VGA/sightMoveLogic.sv                             ;
+; Project_18_08_22_restored/RTL/VGA/smileyBitMap.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/soundCounter.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/square_object.sv                              ;
+; Project_18_08_22_restored/RTL/VGA/startDisplay.bdf                              ;
+; Project_18_08_22_restored/RTL/VGA/stateMachineSignals.sv                        ;
+; Project_18_08_22_restored/RTL/VGA/targetBitMap.sv                               ;
+; Project_18_08_22_restored/RTL/VGA/targetDisplay.bdf                             ;
+; Project_18_08_22_restored/RTL/VGA/trgt.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/trgt.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/trgt.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/trgt_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/trgty.bsf                                     ;
+; Project_18_08_22_restored/RTL/VGA/trgty.qip                                     ;
+; Project_18_08_22_restored/RTL/VGA/trgty.v                                       ;
+; Project_18_08_22_restored/RTL/VGA/trgty_bb.v                                    ;
+; Project_18_08_22_restored/RTL/VGA/valX.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/valX.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/valX.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/valX_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/valX_inst.v                                   ;
+; Project_18_08_22_restored/RTL/VGA/whiteBallBlock.bdf                            ;
+; Project_18_08_22_restored/RTL/VGA/whiteBallMoveLogic.sv                         ;
+; Project_18_08_22_restored/RTL/VGA/winDisplay.bdf                                ;
+; Project_18_08_22_restored/RTL/VGA/winx.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/winx.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/winx.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/winx_bb.v                                     ;
+; Project_18_08_22_restored/RTL/VGA/winy.bsf                                      ;
+; Project_18_08_22_restored/RTL/VGA/winy.qip                                      ;
+; Project_18_08_22_restored/RTL/VGA/winy.v                                        ;
+; Project_18_08_22_restored/RTL/VGA/winy_bb.v                                     ;
+; Project_18_08_22_restored/RTL/audio_codec_controller/audio_codec_controller.qxp ;
+; Project_18_08_22_restored/RTL/lpmconstforso.bsf                                 ;
+; Project_18_08_22_restored/RTL/lpmconstforso.qip                                 ;
+; Project_18_08_22_restored/RTL/lpmconstforso.v                                   ;
+; Project_18_08_22_restored/RTL/lpmconstforso_bb.v                                ;
+; Project_18_08_22_restored/RTL/numberPosition.bsf                                ;
+; Project_18_08_22_restored/RTL/numberPosition.qip                                ;
+; Project_18_08_22_restored/RTL/numberPosition.v                                  ;
+; Project_18_08_22_restored/RTL/numberPosition_bb.v                               ;
+; Project_18_08_22_restored/X_loca.bsf                                            ;
+; Project_18_08_22_restored/X_loca.qip                                            ;
+; Project_18_08_22_restored/X_loca.v                                              ;
+; Project_18_08_22_restored/X_loca_bb.v                                           ;
+; Project_18_08_22_restored/X_location.bsf                                        ;
+; Project_18_08_22_restored/X_location.qip                                        ;
+; Project_18_08_22_restored/X_location.v                                          ;
+; Project_18_08_22_restored/X_location_bb.v                                       ;
+; Project_18_08_22_restored/Y_location.bsf                                        ;
+; Project_18_08_22_restored/Y_location.qip                                        ;
+; Project_18_08_22_restored/Y_location.v                                          ;
+; Project_18_08_22_restored/Y_location_bb.v                                       ;
+; Project_18_08_22_restored/assignment_defaults.qdf                               ;
+; Project_18_08_22_restored/audio_codec_controller.qxp                            ;
+; Project_18_08_22_restored/clock_divider.cmp                                     ;
+; Project_18_08_22_restored/clock_divider.qip                                     ;
+; Project_18_08_22_restored/clock_divider.sip                                     ;
+; Project_18_08_22_restored/clock_divider.spd                                     ;
+; Project_18_08_22_restored/clock_divider.v                                       ;
+; Project_18_08_22_restored/clock_divider/clock_divider_0002.qip                  ;
+; Project_18_08_22_restored/clock_divider/clock_divider_0002.v                    ;
+; Project_18_08_22_restored/clock_divider_sim/clock_divider.vo                    ;
+; Project_18_08_22_restored/constraints/DE10_Standard_Audio.sdc                   ;
+; Project_18_08_22_restored/constraints/pin.tcl                                   ;
+; Project_18_08_22_restored/lpmconst.bsf                                          ;
+; Project_18_08_22_restored/lpmconst.qip                                          ;
+; Project_18_08_22_restored/lpmconst.v                                            ;
+; Project_18_08_22_restored/lpmconst_bb.v                                         ;
+; Project_18_08_22_restored/matrix_top_XY.bsf                                     ;
+; Project_18_08_22_restored/matrix_top_XY.qip                                     ;
+; Project_18_08_22_restored/matrix_top_XY.v                                       ;
+; Project_18_08_22_restored/matrix_top_XY_bb.v                                    ;
+; Project_18_08_22_restored/num1.bsf                                              ;
+; Project_18_08_22_restored/num1.qip                                              ;
+; Project_18_08_22_restored/num1.v                                                ;
+; Project_18_08_22_restored/num1_bb.v                                             ;
+; Project_18_08_22_restored/num2.bsf                                              ;
+; Project_18_08_22_restored/num2.qip                                              ;
+; Project_18_08_22_restored/num2.v                                                ;
+; Project_18_08_22_restored/num2_bb.v                                             ;
+; Project_18_08_22_restored/output_files/Chain1.cdf                               ;
+; Project_18_08_22_restored/simWhiteBall.vwf                                      ;
+; Project_18_08_22_restored/simWhiteBall1.vwf                                     ;
+; Project_18_08_22_restored/simWhiteBall2.vwf                                     ;
+; Project_18_08_22_restored/simWhiteBall3.vwf                                     ;
+; Project_18_08_22_restored/simWhiteBall4.vwf                                     ;
+; Project_18_08_22_restored/simWhiteBall5.vwf                                     ;
+; Project_18_08_22_restored/simWhiteBall6.vwf                                     ;
+; whitebitmap.sv                                                                  ;
++---------------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

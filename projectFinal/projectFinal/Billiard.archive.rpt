@@ -1,0 +1,252 @@
+Archive Project report for Billiard
+Thu Sep 15 00:52:07 2022
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Sep 15 00:52:07 2022 ;
+; Revision Name          ; Billiard                              ;
+; Top-level Entity Name  ; TOP_VGA_DEMO_KBD                      ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/Galag/Desktop/project/1409_5/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/Galag/OneDrive - Technion/EE Lab1 Galit and Gal/Project/projectFinal.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Billiard.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Thu Sep 15 00:52:07 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------+
+; Files Archived                                        ;
++-------------------------------------------------------+
+; File Name                                             ;
++-------------------------------------------------------+
+; ../whitebitmap.sv                                     ;
+; assignment_defaults.qdf                               ;
+; audio_codec_controller.qxp                            ;
+; Billiard.qsf                                          ;
+; C:/Users/Galag/Desktop/project/1409_5/whitebitmap.sv  ;
+; clock_divider.cmp                                     ;
+; clock_divider.qip                                     ;
+; clock_divider.sip                                     ;
+; clock_divider.spd                                     ;
+; clock_divider.v                                       ;
+; clock_divider/clock_divider_0002.qip                  ;
+; clock_divider/clock_divider_0002.v                    ;
+; clock_divider_sim/clock_divider.vo                    ;
+; constraints/DE10_Standard_Audio.sdc                   ;
+; constraints/pin.tcl                                   ;
+; DE10_Standard_Audio.sdc                               ;
+; Lab1Demo.qpf                                          ;
+; Lab1Demo.qsf                                          ;
+; lpmconst.bsf                                          ;
+; lpmconst.qip                                          ;
+; lpmconst.v                                            ;
+; lpmconst_bb.v                                         ;
+; matrix_top_XY.bsf                                     ;
+; matrix_top_XY.qip                                     ;
+; matrix_top_XY.v                                       ;
+; matrix_top_XY_bb.v                                    ;
+; num1.bsf                                              ;
+; num1.qip                                              ;
+; num1.v                                                ;
+; num1_bb.v                                             ;
+; num2.bsf                                              ;
+; num2.qip                                              ;
+; num2.v                                                ;
+; num2_bb.v                                             ;
+; Number_position.bsf                                   ;
+; Number_position.qip                                   ;
+; Number_position.v                                     ;
+; Number_position_bb.v                                  ;
+; output_files/Chain1.cdf                               ;
+; RTL/AUDIO/addr_counter.sv                             ;
+; RTL/AUDIO/AUDIO.bdf                                   ;
+; RTL/AUDIO/prescaler.sv                                ;
+; RTL/AUDIO/SinTable.sv                                 ;
+; RTL/AUDIO/ToneDecoder.sv                              ;
+; RTL/AUDIO/TOP_AUDIO.bdf                               ;
+; RTL/audio_codec_controller/audio_codec_controller.qxp ;
+; RTL/ConstForSquareObject.bsf                          ;
+; RTL/ConstForSquareObject.qip                          ;
+; RTL/ConstForSquareObject.v                            ;
+; RTL/ConstForSquareObject_bb.v                         ;
+; RTL/KEYBOARD/HexSS.sv                                 ;
+; RTL/KEYBOARD/KEYBOARD_INTERFACE.qxp                   ;
+; RTL/KEYBOARD/random.sv                                ;
+; RTL/KEYBOARD/simple_up_counter.sv                     ;
+; RTL/lpmconstforso.bsf                                 ;
+; RTL/lpmconstforso.qip                                 ;
+; RTL/lpmconstforso.v                                   ;
+; RTL/lpmconstforso_bb.v                                ;
+; RTL/numberPosition.bsf                                ;
+; RTL/numberPosition.qip                                ;
+; RTL/numberPosition.v                                  ;
+; RTL/numberPosition_bb.v                               ;
+; RTL/Seg7/SEG7.SV                                      ;
+; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/BlackBallBitMap.sv                            ;
+; RTL/VGA/blueBitMap.sv                                 ;
+; RTL/VGA/blueHoleBitMap.sv                             ;
+; RTL/VGA/clockDivider.v                                ;
+; RTL/VGA/cnfx.bsf                                      ;
+; RTL/VGA/cnfx.qip                                      ;
+; RTL/VGA/cnfx.v                                        ;
+; RTL/VGA/cnfx_bb.v                                     ;
+; RTL/VGA/cnfy.bsf                                      ;
+; RTL/VGA/cnfy.qip                                      ;
+; RTL/VGA/cnfy.v                                        ;
+; RTL/VGA/cnfy_bb.v                                     ;
+; RTL/VGA/collisionCalc.sv                              ;
+; RTL/VGA/confettiBitMap.sv                             ;
+; RTL/VGA/correctTargetCheck.sv                         ;
+; RTL/VGA/GALGALITBitMap.sv                             ;
+; RTL/VGA/game_controller.sv                            ;
+; RTL/VGA/GameStateMachine.sv                           ;
+; RTL/VGA/holeBitMap.sv                                 ;
+; RTL/VGA/holeDisplay.bdf                               ;
+; RTL/VGA/holeRandom.sv                                 ;
+; RTL/VGA/holeTargetMux.sv                              ;
+; RTL/VGA/loseDisplay.bdf                               ;
+; RTL/VGA/lsx.bsf                                       ;
+; RTL/VGA/lsx.qip                                       ;
+; RTL/VGA/lsx.v                                         ;
+; RTL/VGA/lsx_bb.v                                      ;
+; RTL/VGA/lsy.bsf                                       ;
+; RTL/VGA/lsy.qip                                       ;
+; RTL/VGA/lsy.v                                         ;
+; RTL/VGA/lsy_bb.v                                      ;
+; RTL/VGA/NumbersBitMap.sv                              ;
+; RTL/VGA/objects_mux.sv                                ;
+; RTL/VGA/orangeBitMap.sv                               ;
+; RTL/VGA/orangeHoleBitMap.sv                           ;
+; RTL/VGA/playBall1Block.bdf                            ;
+; RTL/VGA/playBall2Block.bdf                            ;
+; RTL/VGA/playBall3Block.bdf                            ;
+; RTL/VGA/playBall4Block.bdf                            ;
+; RTL/VGA/playBallMoveLogic.sv                          ;
+; RTL/VGA/pntx.bsf                                      ;
+; RTL/VGA/pntx.qip                                      ;
+; RTL/VGA/pntx.v                                        ;
+; RTL/VGA/pntx_bb.v                                     ;
+; RTL/VGA/pnty.bsf                                      ;
+; RTL/VGA/pnty.qip                                      ;
+; RTL/VGA/pnty.v                                        ;
+; RTL/VGA/pnty_bb.v                                     ;
+; RTL/VGA/pointsBitMap.sv                               ;
+; RTL/VGA/pointsDisplay.bdf                             ;
+; RTL/VGA/portalBlock.bdf                               ;
+; RTL/VGA/portalMoveLogic.sv                            ;
+; RTL/VGA/purpleBitMap.sv                               ;
+; RTL/VGA/redBallBitMap.sv                              ;
+; RTL/VGA/score_counter.sv                              ;
+; RTL/VGA/sightBitMap.sv                                ;
+; RTL/VGA/sightDisplay.bdf                              ;
+; RTL/VGA/sightMoveLogic.sv                             ;
+; RTL/VGA/smileyBitMap.sv                               ;
+; RTL/VGA/soundCounter.sv                               ;
+; RTL/VGA/square_object.sv                              ;
+; RTL/VGA/STARTBitMap.sv                                ;
+; RTL/VGA/startDisplay.bdf                              ;
+; RTL/VGA/stateMachineSignals.sv                        ;
+; RTL/VGA/targetBitMap.sv                               ;
+; RTL/VGA/targetDisplay.bdf                             ;
+; RTL/VGA/TOP_VGA_DEMO_KBD.bdf                          ;
+; RTL/VGA/trgt.bsf                                      ;
+; RTL/VGA/trgt.qip                                      ;
+; RTL/VGA/trgt.v                                        ;
+; RTL/VGA/trgt_bb.v                                     ;
+; RTL/VGA/trgty.bsf                                     ;
+; RTL/VGA/trgty.qip                                     ;
+; RTL/VGA/trgty.v                                       ;
+; RTL/VGA/trgty_bb.v                                    ;
+; RTL/VGA/valX.bsf                                      ;
+; RTL/VGA/valX.qip                                      ;
+; RTL/VGA/valX.v                                        ;
+; RTL/VGA/valX_bb.v                                     ;
+; RTL/VGA/valX_inst.v                                   ;
+; RTL/VGA/VGA_Controller.sv                             ;
+; RTL/VGA/whiteBallBlock.bdf                            ;
+; RTL/VGA/whiteBallMoveLogic.sv                         ;
+; RTL/VGA/winDisplay.bdf                                ;
+; RTL/VGA/winx.bsf                                      ;
+; RTL/VGA/winx.qip                                      ;
+; RTL/VGA/winx.v                                        ;
+; RTL/VGA/winx_bb.v                                     ;
+; RTL/VGA/winy.bsf                                      ;
+; RTL/VGA/winy.qip                                      ;
+; RTL/VGA/winy.v                                        ;
+; RTL/VGA/winy_bb.v                                     ;
+; RTL/VGA/YouLoseBitMap.sv                              ;
+; RTL/VGA/YouWinBitMap.sv                               ;
+; simWhiteBall.vwf                                      ;
+; simWhiteBall1.vwf                                     ;
+; simWhiteBall2.vwf                                     ;
+; simWhiteBall3.vwf                                     ;
+; simWhiteBall4.vwf                                     ;
+; simWhiteBall5.vwf                                     ;
+; simWhiteBall6.vwf                                     ;
+; X_loca.bsf                                            ;
+; X_loca.qip                                            ;
+; X_loca.v                                              ;
+; X_loca_bb.v                                           ;
+; X_location.bsf                                        ;
+; X_location.qip                                        ;
+; X_location.v                                          ;
+; X_location_bb.v                                       ;
+; Y_location.bsf                                        ;
+; Y_location.qip                                        ;
+; Y_location.v                                          ;
+; Y_location_bb.v                                       ;
++-------------------------------------------------------+
+
+
